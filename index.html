@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>좌동 스타디움</title>
-  <link rel="stylesheet" href="jwadong-stadium.css">
-</head>
-<body>
-  <main>
-    <h1><img src="White_LOGO.png" alt="좌동 스타디움 로고" class="header-logo"></h1>
-    <section class="main-layout">
-      <div class="waiting-box-vertical">
-        <button id="addWaitingGroupBtn" class="court-btn main-action-btn">경기 추가</button>
-        <aside class="waiting-aside">
-          <h2>경기 대기</h2>
-          <div id="waitingList" class="waiting-list"></div>
-        </aside>
-        <button id="lessonCourtBtn" class="court-btn lesson-select bottom-action-btn">레슨 코트 지정</button>
-      </div>
-      <div class="court-area">
-        <div class="court-row">
-          <div class="court-wrapper" id="courtWrapper1" data-court="1"></div>
-          <div class="court-wrapper" id="courtWrapper2" data-court="2"></div>
-          <div class="court-wrapper small" id="courtWrapper5" data-court="5"></div>
-        </div>
-        <div class="court-row">
-          <div class="court-wrapper" id="courtWrapper3" data-court="3"></div>
-          <div class="court-wrapper" id="courtWrapper4" data-court="4"></div>
-          <div class="court-wrapper small" id="courtWrapper6" data-court="6"></div>
-        </div>
-      </div>
-    </section>
-    <div id="courtSelectModal" class="modal-overlay" style="display:none;"></div>
-    <div id="lessonSelectModal" class="modal-overlay" style="display:none;"></div>
-  </main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>좌동 스타디움</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <h1><img src="White_LOGO.png" alt="좌동 스타디움 로고" class="header-logo" /></h1>
+            <section class="main-layout">
+                <div class="waiting-box-vertical">
+                    <button id="addWaitingGroupBtn" class="court-btn main-action-btn">경기 추가</button>
+                    <aside class="waiting-aside">
+                        <h2>경기 대기</h2>
+                        <div id="waitingList" class="waiting-list"></div>
+                    </aside>
+                    <button id="lessonCourtBtn" class="court-btn lesson-select bottom-action-btn">레슨 코트 지정</button>
+                </div>
+                <div class="court-area">
+                    <div class="court-row">
+                        <div class="court-wrapper" id="courtWrapper1" data-court="1"></div>
+                        <div class="court-wrapper" id="courtWrapper2" data-court="2"></div>
+                        <div class="court-wrapper small" id="courtWrapper5" data-court="5"></div>
+                    </div>
+                    <div class="court-row">
+                        <div class="court-wrapper" id="courtWrapper3" data-court="3"></div>
+                        <div class="court-wrapper" id="courtWrapper4" data-court="4"></div>
+                        <div class="court-wrapper small" id="courtWrapper6" data-court="6"></div>
+                    </div>
+                </div>
+            </section>
+            <div id="courtSelectModal" class="modal-overlay" style="display: none"></div>
+            <div id="lessonSelectModal" class="modal-overlay" style="display: none"></div>
+        </main>
 
-  <script src="jwadong-stadium.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
